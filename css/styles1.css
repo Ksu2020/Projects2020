@@ -30,7 +30,8 @@ div p {
 }
 
 div p > span {
-  text-align: left;
+ display: block;
+ text-align : left;
 }
 
 div span > span {
