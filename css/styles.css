@@ -48,3 +48,10 @@ button:focus {
   background: blue;
   color: white;
 }
+
+.center-block-2{
+  background: red; 
+  border: 1px solid black;
+  display: block;
+}
+
