@@ -1,43 +1,38 @@
 html,
 body {
-  margin: 0;
-  padding: 0;
-  min-height: 100%;
-  height: 100%;
-  font-size: 14px;
-  font-family: Arial;
-  text-align: center;
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    height: 100%;
+    font-size: 14px;
+    font-family: Arial;
+    text-align: center;
+}
+
+div {
+    width: 60%;
+    margin: 0 auto;
+    background: yellow;
+    border: 1px solid red;
+    padding: 10px;
 }
 
 div h1 {
-  text-align: right;
-}
-div {
-  width: 60%;
-  margin: 0 20%;
-  background: yellow;
-  border: 1px solid red;
-  padding: 10px;
-}
-span {
-  color: white;
-  font-size: 18px;
+    text-align: right;
 }
 
-div p {
-  background: blue;
-  color: white;
+p > span {
+    display: block;
+    text-align: left;
+    font-size: 1.5em;
 }
 
-div p > span {
- display: block;
- text-align : left;
+p {
+    background: blue;
+    color: white;
 }
 
-div span > span {
-  color: red;
+span span, i b {
+    color: red;
 }
 
-div i > b {
-  color: red;
-}
