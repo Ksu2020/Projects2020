@@ -34,14 +34,16 @@ body > div {
 div > div {
     display: inline-block;
     float: left;
-    width: 30%
+}
+div > div:nth-child(odd) {
+    min-width: 30%;
 }
 div > div:nth-child(even) {
-    width: auto;
+    width: 65%;
+    border-left: 1px solid #808080bf;
+    padding: 1em;
 }
-div > div:last-child {
-    width: 70%
-}
+
 a {
     color: darkslateblue;
     text-align: justify;
@@ -75,11 +77,4 @@ ul li::before {
     font-size: 30px;
     line-height: 0.5;
     float:left;
-}
-
-.vl {
-    border-left: 1px solid #808080bf;
-    height: 24%;
-    position: absolute;
-    margin-left: -1.5em;
 }
