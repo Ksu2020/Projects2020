@@ -1,0 +1,86 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    height: 100%;
+    font-size: 16px;
+    font-family: Arial;
+
+}
+p,div {
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.main {
+    width: 98%;
+    margin: 20px auto;
+}
+.main > div {
+    float: left;
+}
+.clearfix::after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.card {
+    position: relative;
+    border: 1px solid #f1f1f1;
+    width: calc(100% / 10 * 2);
+}
+.card p {
+    padding: 0 15px;
+}
+.hart-libra {
+    position: absolute;
+    float: left;
+    width: auto;
+    right: 0px;
+    padding: 10px;
+    z-index: 100;
+}
+.hart-libra >div{
+    padding: 0;
+}
+
+.hart-libra img {
+    width: 32px;
+}
+.image {
+    text-align: center;
+}
+.image img {
+    height: 150px;
+ /*   width: calc(100% - 15px);*/
+}
+.basket-wrapper{
+    width: 100%;
+    display: inline-block;
+    padding: 0;
+}
+.price  {
+    font-size: 20px;
+    float: left;
+    width: 80%;
+    padding: 0;
+}
+.value{
+    font-size: 30px;
+}
+.available {
+    font-size: 16px;
+    color: green;
+}
+
+.basket {
+    float: right;
+    width: 20%;
+    padding: 10% 0;
+}
+.basket >img {
+    width: 30px;
+
+}
