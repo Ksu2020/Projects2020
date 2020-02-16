@@ -6,6 +6,20 @@ html, body {
     background: darkgray;
 }
 
+p, h1, h2, h3, h4, h5, h6, div {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    clear: both;
+    content: ' ';
+    display: block;
+}
+.green-text {
+    color: green;
+}
+
 /*(px % em (ex) rem vw vh)*/
 
 .container {
@@ -13,16 +27,115 @@ html, body {
     background: white;
     margin: 10px auto;
     border: 1px solid darkslategray;
+    padding: 10px;
+
 }
 
 .product {
-    width: 20%;
-    float: left;
+    width: calc(20% - 2px);
+    padding: 10px;
+    margin: 1px;
     border: 1px solid darkslategray;
+    background: white;
+    border-radius: 5px;
+    position: relative;
+    min-width: 150px;
+    float: left;
 }
 
-.right {
-    width: 25px;
-    height: 25px;
+.product .overflow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.15);
+    opacity: 0;
+}
 
+.product .overflow:hover {
+    opacity: 1;
+}
+
+.product .overflow div {
+    background: white;
+    color: red;
+    font-weight: bold;
+    width: 100px;
+    position: absolute;
+    top: 40%;
+    left: calc(50% - 50px);
+
+}
+.product .right {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.product .right img {
+    width: 25px;
+    /* height: 25px; */
+    display: block;
+    margin: 5px;
+}
+
+.product .image-container {
+    height: 150px;
+    text-align: center;
+}
+
+.product .image-container img {
+    max-height: 150px;
+    max-width: 100%;
+}
+
+.product .product-info h3 span {
+    font-size: 17px;
+}
+
+.product .product-description {
+    position: relative;
+}
+
+.product .product-description img {
+    width: 25px;
+
+    /*solution #1*/
+    /*position: absolute;
+        right: 0;
+        top: 0;*/
+
+    /*solution #2*/
+    float: right;
+    cursor: pointer;
+}
+
+.product .product-info > p {
+    min-height: 7em;
+}
+
+.product .image-container.with-background {
+    background-image: url("./images/product_3.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+div[class*="link-to-google"] a[href*="https://"] {
+    color: red;
+}
+
+input::placeholder {
+    font-size: 18px;
+    color: deeppink;
+}
+
+@media screen and  (max-width: 800px) {
+    .container {
+        width: 90%;
+    }
+    html, body {
+        font-size: 18px;
+    }
 }
