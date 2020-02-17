@@ -256,6 +256,6 @@ input::placeholder {
     display: none;
 }
 
-.product-info:hover + .description {
+.product-info:hover > .description {
     display: block;
 }
