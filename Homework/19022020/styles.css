@@ -1,0 +1,180 @@
+html, body {
+    /* margin: 0;
+     font-size: 15px;
+     min-height: 100%;
+     height: 100%;
+     background: darkgray;*/
+}
+
+header {
+    position: fixed;
+    background: #444;
+    color: white;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    padding: 20px 0px 40px;
+}
+
+
+p, h1, h3 {
+    margin: 30px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-wrapper {
+    margin-top: 20px;
+}
+
+.header-sprite {
+    min-width: 30px;
+    min-height: 30px;
+    position: absolute;
+    background: url(https://googlesamples.github.io/web-fundamentals/fundamentals/design-and-ux/responsive/sprite-sheet.png);
+    background-position: -502px -278px;
+}
+
+.title {
+    color: cornflowerblue;
+    font-size: 30px;
+    position: relative;
+    left: 33px;
+    top: -4px;
+}
+
+.title > span {
+    font-weight: bold;
+    color: white;
+}
+
+header > p {
+    margin: 10px;
+}
+
+.header-designed {
+    margin-bottom: 30px;
+}
+
+.header-designed > span,
+footer > span {
+    min-width: 20px;
+    min-height: 33px;
+    position: absolute;
+    background: url(https://googlesamples.github.io/web-fundamentals/fundamentals/design-and-ux/responsive/sprite-sheet.png);
+    background-position: -507px -521px;
+
+}
+
+.header-sociale {
+    text-align: center;
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 3px;
+    font-size: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    margin-right: 2px;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+    margin-left: 2px;
+}
+
+.container {
+    padding: 250px 0 0 0;
+}
+
+.container > p {
+    margin: 5px;
+}
+
+.btn-download {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Style buttons */
+.btn {
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    cursor: pointer;
+    font-size: 13px;
+
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+    background-color: RoyalBlue;
+    color: #f1f1f1;
+}
+.row {
+    margin: 20px;
+}
+.card {
+    position: relative;
+    border: 1px solid #80808021;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    border-top: 3px solid #75c181;
+    border-radius: 5px;
+
+}
+
+.card-sprite {
+    min-width: 30px;
+    min-height: 30px;
+    position: absolute;
+    background: url(https://googlesamples.github.io/web-fundamentals/fundamentals/design-and-ux/responsive/sprite-sheet.png);
+    background-position: -502px -242px;
+    top: 50px;
+    right: 108px;
+}
+
+.card-title {
+    margin: 90px 0;
+}
+
+.card-title > p {
+    margin: 0;
+}
+
+.Quick-title {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+footer {
+    background: #444;
+    color: white;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    text-align: center;
+    padding: 15px 0px;
+}
