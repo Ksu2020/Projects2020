@@ -106,7 +106,7 @@ footer > span {
     padding: 250px 0 0 0;
 }
 
-.container > p {
+.container p {
     margin: 5px;
 }
 
@@ -131,30 +131,136 @@ footer > span {
     background-color: RoyalBlue;
     color: #f1f1f1;
 }
-.row {
+
+.container > section {
     margin: 20px;
+    padding: 0 10%;
 }
-.card {
+.card1 {
     position: relative;
     border: 1px solid #80808021;
-    width: 250px;
-    height: 250px;
     text-align: center;
     border-top: 3px solid #75c181;
     border-radius: 5px;
+    margin: 10px 0;
 
 }
 
-.card-sprite {
+.card-sprite1 {
     min-width: 30px;
     min-height: 30px;
     position: absolute;
     background: url(https://googlesamples.github.io/web-fundamentals/fundamentals/design-and-ux/responsive/sprite-sheet.png);
     background-position: -502px -242px;
     top: 50px;
-    right: 108px;
+    right: calc(50% - 15px);
+    left: calc(50% - 15px);
 }
 
+.card2 {
+    position: relative;
+    border: 1px solid #80808021;
+    text-align: center;
+    border-top: 3px solid #e91e6394;
+    border-radius: 5px;
+    margin: 10px 0;
+
+}
+
+.card-sprite2 {
+    min-width: 30px;
+    min-height: 30px;
+    position: absolute;
+    background: url(https://googlesamples.github.io/web-fundamentals/fundamentals/design-and-ux/responsive/sprite-sheet.png);
+    background-position: -502px -315px;
+    top: 50px;
+    right: calc(50% - 15px);
+    left: calc(50% - 15px);
+}
+
+.card3 {
+    position: relative;
+    border: 1px solid #80808021;
+    text-align: center;
+    border-top: 3px solid #7675c1;
+    border-radius: 5px;
+    margin: 10px 0;
+
+}
+
+.card-sprite3 {
+    min-width: 30px;
+    min-height: 30px;
+    position: absolute;
+    background: url(https://googlesamples.github.io/web-fundamentals/fundamentals/design-and-ux/responsive/sprite-sheet.png);
+    background-position: -159px -907px;
+    top: 50px;
+    right: calc(50% - 15px);
+    left: calc(50% - 15px);
+}
+
+.card4 {
+    position: relative;
+    border: 1px solid #80808021;
+    text-align: center;
+    border-top: 3px solid #3896e0;
+    border-radius: 5px;
+    margin: 10px 0;
+
+}
+
+.card-sprite4 {
+    min-width: 30px;
+    min-height: 30px;
+    position: absolute;
+    background: url(https://googlesamples.github.io/web-fundamentals/fundamentals/design-and-ux/responsive/sprite-sheet.png);
+    background-position: 30px -172px;
+    top: 50px;
+    right: calc(50% - 15px);
+    left: calc(50% - 15px);
+}
+
+.card5 {
+    position: relative;
+    border: 1px solid #80808021;
+    text-align: center;
+    border-top: 3px solid #ff980075;
+    border-radius: 5px;
+    margin: 10px 0;
+
+}
+
+.card-sprite5 {
+    min-width: 30px;
+    min-height: 30px;
+    position: absolute;
+    background: url(https://googlesamples.github.io/web-fundamentals/fundamentals/design-and-ux/responsive/sprite-sheet.png);
+    background-position: -459px -54px;
+    top: 50px;
+    right: calc(50% - 15px);
+    left: calc(50% - 15px);
+}
+
+.card6 {
+    position: relative;
+    border: 1px solid #80808021;
+    text-align: center;
+    border-top: 3px solid #23d4c3;
+    border-radius: 5px;
+    margin: 10px 0;
+
+}
+
+.card-sprite6 {
+    min-width: 30px;
+    min-height: 30px;
+    position: absolute;
+    background: url(https://googlesamples.github.io/web-fundamentals/fundamentals/design-and-ux/responsive/sprite-sheet.png);
+    background-position: -418px -76px;
+    top: 50px;
+    right: calc(50% - 15px);
+    left: calc(50% - 15px);
+}
 .card-title {
     margin: 90px 0;
 }
